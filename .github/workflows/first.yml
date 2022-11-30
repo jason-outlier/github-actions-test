@@ -7,3 +7,11 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - run: echo 'hello world'
+  pwd-ls:
+      name: pwd-ls
+      runs-on: ubuntu-latest
+      steps:
+        - name: 현재 작업 경로 확인
+          run: pwd
+        - name: 파일 보기
+          run: ls -al
