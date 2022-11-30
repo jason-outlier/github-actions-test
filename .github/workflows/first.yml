@@ -6,13 +6,15 @@ jobs:
   echo:
       runs-on: ubuntu-latest
       steps:
-        - run: echo 'hello world'
-  pwd-ls:
-      name: pwd-ls
+        - run: echo 'github-actions-test'
+  checkout-test:
+      name: checkout-test
       runs-on: ubuntu-latest
       steps:
-        - name: 현재 작업 경로 확인
-          run: pwd
         - name: 파일 보기
           run: ls -al
         - uses: actions/checkout@v3
+        - name: 파일 다시보기
+          run: ls -al
+        - name: yml 확인
+          run: cat .github/workflows/first.yml
