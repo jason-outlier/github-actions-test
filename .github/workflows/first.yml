@@ -21,4 +21,4 @@ jobs:
         - name: 파일 다시보기
           run: ls -al new-dir
         - name: yml 확인
-          run: cat new-dir/.github/workflows/first.yml
+          run: cat new-dir/action.yml
